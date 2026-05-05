@@ -44,6 +44,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     reveal();
     handleScrollNav();
+
+    // Mobile Touch Hover for Impact Cards
+    const impactCards = document.querySelectorAll('.impact-card');
+    impactCards.forEach(card => {
+        card.addEventListener('touchstart', () => {
+            card.classList.add('touch-active');
+        }, {passive: true});
+        card.addEventListener('touchend', () => {
+            setTimeout(() => {
+                card.classList.remove('touch-active');
+            }, 500); 
+        }, {passive: true});
+    });
 });
 
 function openLightbox(src) {
