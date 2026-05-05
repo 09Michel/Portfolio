@@ -33,7 +33,7 @@ body {
 
 /* 2. NAVIGATION & ENLARGED LOGO */
 .editorial-nav {
-    padding: 30px 8%;
+    padding: 20px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,12 +45,16 @@ body {
 }
 
 .editorial-nav.scrolled { 
-    padding: 15px 8%; 
+    padding: 10px 8%; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
 }
 
+.editorial-nav.nav-hidden {
+    transform: translateY(-100%);
+}
+
 .nav-logo { 
-    height: 65px; /* Updated size for visibility */
+    height: 45px; /* Reduced size */
     width: auto; 
     margin-right: 15px; 
     transition: height 0.4s ease;
@@ -63,7 +67,7 @@ body {
 
 .nav-name { 
     font-family: var(--serif); 
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
     font-weight: 700; 
     color: var(--maroon); 
 }
@@ -71,8 +75,8 @@ body {
 .nav-right a { 
     text-decoration: none; 
     color: var(--navy); 
-    font-size: 1.15rem;      
-    margin-left: 40px;      
+    font-size: 1rem;      
+    margin-left: 30px;      
     font-weight: 600; 
     text-transform: uppercase; 
     letter-spacing: 1px;
@@ -345,7 +349,7 @@ body {
 
 .work-hero .hero-text h1 {
     font-family: var(--serif);
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(1.5rem, 4vw, 3rem);
     margin-bottom: 20px;
 }
 
@@ -354,8 +358,8 @@ body {
 }
 
 .work-hero .hero-text p {
-    font-size: 1.1rem;
-    max-width: 600px;
+    font-size: 0.95rem;
+    max-width: 700px;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.9);
 }
@@ -786,12 +790,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contact-hero:not(.betty-bg) {
     background: linear-gradient(135deg, var(--navy) 0%, var(--bg-dark) 100%);
 }
 
 .contact-hero .hero-text h1 {
     font-family: var(--serif);
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(1.5rem, 4vw, 3rem);
     margin-bottom: 20px;
 }
 
@@ -800,8 +807,8 @@ body {
 }
 
 .contact-hero .hero-text p {
-    font-size: 1.1rem;
-    max-width: 600px;
+    font-size: 0.95rem;
+    max-width: 700px;
     margin: 0 auto;
     color: rgba(255, 255, 255, 0.9);
 }

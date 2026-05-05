@@ -14,8 +14,36 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".scroll-progress").style.width = scrollPercent + "%";
     };
 
-    window.addEventListener("scroll", reveal);
+    let lastScrollY = window.scrollY;
+    const nav = document.querySelector('.editorial-nav');
+
+    const handleScrollNav = () => {
+        if (!nav) return;
+        const currentScrollY = window.scrollY;
+        
+        // Add shadow when scrolled
+        if (currentScrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+
+        // Hide when scrolling down, show when scrolling up
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            nav.classList.add('nav-hidden');
+        } else {
+            nav.classList.remove('nav-hidden');
+        }
+        
+        lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", () => {
+        reveal();
+        handleScrollNav();
+    });
     reveal();
+    handleScrollNav();
 });
 
 function openLightbox(src) {
