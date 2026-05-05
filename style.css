@@ -1135,8 +1135,30 @@ body {
 
 /* 8. RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+    .editorial-nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5%;
+    }
+
+    .editorial-nav.scrolled {
+        padding: 10px 5%;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
     .nav-logo {
         height: 50px;
+    }
+
+    .nav-right a {
+        font-size: 1rem;
+        margin-left: 0;
     }
     
     .section-image {
@@ -1147,6 +1169,13 @@ body {
     .about-white {
         padding: 60px 5%;
         gap: 40px;
+    }
+
+    .full-section,
+    .work-section,
+    .insights-section,
+    .split-contact {
+        padding: 60px 5% !important;
     }
 
     .footer-bottom {
@@ -1160,8 +1189,33 @@ body {
         margin-right: 0;
     }
 
-    .nav-right a {
-        font-size: 1rem;
-        margin-left: 15px;
+    .category-btn-container {
+        flex-direction: column !important;
+        margin-top: 20px !important;
+    }
+
+    .gallery-grid,
+    .impact-grid,
+    .insights-grid,
+    .certifications-grid {
+        grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 480px) {
+    .work-hero .hero-text h1,
+    .insights-hero .hero-text h1,
+    .contact-hero .hero-text h1,
+    .editorial-hero .hero-text h1 {
+        font-size: 2.2rem !important;
+    }
+
+    .contact-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .work-category-btn {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}
