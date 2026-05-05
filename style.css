@@ -554,11 +554,14 @@ body {
     transition: transform 0.6s ease-out;
 }
 
-.impact-card:hover:before {
+.impact-card:hover:before,
+.impact-card:active:before,
+.impact-card.touch-active:before {
     transform: scale(20);
 }
 
-.impact-card:hover {
+.impact-card:hover,
+.impact-card.touch-active {
     transform: translateY(-10px);
 }
 
@@ -1026,7 +1029,7 @@ body {
     border-color: var(--gold);
 }
 .btn-primary { 
-    border: 1px solid white; 
+    background: var(--navy); 
     color: white; 
     padding: 16px 35px; 
     text-decoration: none; 
@@ -1035,14 +1038,28 @@ body {
     display: inline-block; 
     min-width: 180px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background: transparent;
+    border: 1px solid var(--navy);
     transition: 0.3s;
 }
 
-.btn-primary:before {
+.btn-primary:hover {
+    background: var(--maroon);
+    border-color: var(--maroon);
+}
+
+/* Hero Button Overrides */
+.editorial-hero .btn-primary,
+.editorial-hero .btn-secondary {
+    background: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.editorial-hero .btn-primary:before,
+.editorial-hero .btn-secondary:before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -1057,17 +1074,19 @@ body {
     transition: transform 0.45s ease-out;
 }
 
-.btn-primary:hover:before {
+.editorial-hero .btn-primary:hover:before,
+.editorial-hero .btn-secondary:hover:before {
     transform: scale(15);
 }
 
-.btn-primary:hover { 
-    color: white;
+.editorial-hero .btn-primary:hover,
+.editorial-hero .btn-secondary:hover {
+    color: white !important;
 }
 
 .btn-secondary { 
-    border: 1px solid white; 
-    color: white; 
+    border: 1px solid var(--navy); 
+    color: var(--navy); 
     padding: 16px 35px; 
     text-decoration: none; 
     font-weight: 600; 
@@ -1076,31 +1095,10 @@ body {
     transition: 0.3s;
     min-width: 180px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
 }
 
-.btn-secondary:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: -16px;
-    right: -16px;
-    background: rgba(255, 255, 255, 0.2);
-    height: 32px;
-    width: 32px;
-    border-radius: 32px;
-    transform: scale(1);
-    transform-origin: 50% 50%;
-    transition: transform 0.45s ease-out;
-}
-
-.btn-secondary:hover:before {
-    transform: scale(15);
-}
-
-.btn-secondary:hover { 
+.btn-secondary:hover {
+    background: var(--navy);
     color: white;
 }
 
