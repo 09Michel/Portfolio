@@ -1050,7 +1050,7 @@ body {
 /* Hero Button Overrides */
 .editorial-hero .btn-primary,
 .editorial-hero .btn-secondary {
-    background: transparent !important;
+    background: var(--maroon) !important;
     border: 1px solid white !important;
     color: white !important;
     position: relative;
