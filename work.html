@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michel Eliz Mwaniki | Work</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="scroll-progress"></div>
+
+    <nav class="editorial-nav">
+        <div class="nav-left">
+            <img src="images/logo1.12.png" alt="Logo" class="nav-logo">
+            <span class="nav-name">Michel Eliz</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html#about">About</a>
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="work-hero betty-bg">
+        <div class="hero-text">
+            <span class="category-tag">PORTFOLIO</span>
+            <h1>My <span>Work</span></h1>
+            <p>A curated collection of web development projects and graphic design work showcasing technical expertise
+                and creative vision.</p>
+        </div>
+    </header>
+
+    <!-- SECTION 01: WORK -->
+    <section id="web-dev" class="full-section work-section bg-white" style="padding: 40px 8%;">
+        <div class="container">
+            <div class="section-intro">
+                <span class="mini-title"
+                    style="color: var(--maroon); border-left: 3px solid var(--maroon); padding-left: 15px;">01 Web
+                    Development</span>
+                <h2>Digital Projects</h2>
+                <p class="section-description">Creating responsive, user-centric web applications that combine
+                    functionality with elegant design.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('images/truegreen.jpg')">
+                    <div class="gallery-img-box"><img src="images/truegreen.jpg" alt="TrueGreen Branding"></div>
+                    <div class="gallery-content">
+                        <h3>AfriFood Recipe App</h3>
+                        <div class="project-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <p class="view-prompt">Read More →</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/juniorleague.jpg')">
+                    <div class="gallery-img-box"><img src="images/juniorleague.jpg" alt="JLN Poster"></div>
+                    <div class="gallery-content">
+                        <h3>Junior League of Nairobi</h3>
+                        <div class="project-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <p class="view-prompt">Read More →</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/idi.jpg')">
+                    <div class="gallery-img-box"><img src="images/idi.jpg" alt="IDI Poster"></div>
+                    <div class="gallery-content">
+                        <h3>Institute of Design and Innovation</h3>
+                        <div class="project-tags">
+                            <span class="tag">Full Stack</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <p class="view-prompt">Read More →</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="graphic-design" class="full-section work-section"
+        style="background-color: var(--bg-dark); padding: 20px 8%;">
+        <div class="container">
+            <div class="section-intro">
+                <span class="mini-title"
+                    style="color: var(--text-light); border-left: 3px solid var(--maroon); padding-left: 15px;">02
+                    Graphic Design</span>
+                <h2>Visual Identities</h2>
+                <p class="section-description" style="color: rgba(255,255,255,0.8);">Crafting memorable brand
+                    experiences through thoughtful visual design and compelling storytelling.</p>
+            </div>
+            <div class="zigzag-grid">
+                <div class="zigzag-item" onclick="openGallery('TrueGreen Nurseries')">
+                    <div class="zigzag-img-box"><img src="images/truegreen.jpg" alt="TrueGreen Branding"></div>
+                    <div class="zigzag-content">
+                        <h3>TrueGreen Nurseries</h3>
+                        <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px; font-size: 0.9rem;">A comprehensive
+                            brand identity project encompassing logo design, color typography, and packaging concepts.
+                        </p>
+                        <button class="view-btn" onclick="openGallery('TrueGreen Nurseries'); event.stopPropagation()"
+                            style="font-size: 0.9rem; padding: 8px 16px;">Click to see posters →</button>
+                    </div>
+                </div>
+                <div class="zigzag-item" onclick="openGallery('Junior League of Nairobi')">
+                    <div class="zigzag-img-box"><img src="images/juniorleague.jpg" alt="JLN Poster"></div>
+                    <div class="zigzag-content">
+                        <h3>Junior League of Nairobi</h3>
+                        <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px; font-size: 0.9rem;">High-impact
+                            poster designs and promotional materials created for community events and fundraisers.</p>
+                        <button class="view-btn"
+                            onclick="openGallery('Junior League of Nairobi'); event.stopPropagation()"
+                            style="font-size: 0.9rem; padding: 8px 16px;">Click to see posters →</button>
+                    </div>
+                </div>
+                <div class="zigzag-item" onclick="openGallery('Institute of Design and Innovation')">
+                    <div class="zigzag-img-box"><img src="images/idi.jpg" alt="IDI Poster"></div>
+                    <div class="zigzag-content">
+                        <h3>Institute of Design and Innovation</h3>
+                        <p style="color: rgba(255,255,255,0.7); margin-bottom: 15px; font-size: 0.9rem;">Modern visual
+                            design and identity work created to represent cutting-edge educational programs.</p>
+                        <button class="view-btn"
+                            onclick="openGallery('Institute of Design and Innovation'); event.stopPropagation()"
+                            style="font-size: 0.9rem; padding: 8px 16px;">Click to see posters →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 03: IMPACT PROJECTS -->
+    <section id="impact" class="full-section" style="background-color: var(--maroon); padding: 40px 8%;">
+        <div class="container">
+            <div class="section-intro">
+                <span class="mini-title"
+                    style="color: var(--gold); border-left: 3px solid var(--gold); padding-left: 15px;">03 Impact
+                    Projects</span>
+                <h2 style="color: white;">Community & Social Impact</h2>
+                <p class="section-description" style="color: rgba(255,255,255,0.9);">Projects that drive real change
+                    through technology, design, and community engagement.</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-image"><img src="images/impact-1.jpg" alt="Community App"></div>
+                    <h3>Community Support App</h3>
+                    <p>Designed a platform to connect local volunteers with neighborhood needs, improving response time
+                        and collaboration.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-image"><img src="images/impact-2.jpg" alt="Sustainability Campaign"></div>
+                    <h3>Sustainability Campaign</h3>
+                    <p>Created a digital campaign to promote environmental awareness and sustainable practices among
+                        youth groups.</p>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-image"><img src="images/impact-3.jpg" alt="Nonprofit Brand"> </div>
+                    <h3>Nonprofit Brand Refresh</h3>
+                    <p>Refreshed visual identity for a nonprofit to increase trust, visibility, and donor engagement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="editorial-footer">
+        <div class="footer-main">
+            <!-- Logo/Name -->
+            <div class="footer-brand">
+                <h2 class="nav-name">Michel Eliz</h2>
+            </div>
+
+            <!-- Big Editorial Statement -->
+            <div class="footer-statement">
+                <p>Architecting ethical tech solutions <br>& creative strategies.</p>
+            </div>
+
+            <!-- Professional Links -->
+            <nav class="footer-nav">
+                <div class="footer-link-group">
+                    <span class="footer-label">Connect</span>
+                    <a href="https://linkedin.com/in/michel-mwaniki-352342351" target="_blank" class="footer-link">
+                        <span class="footer-icon">L</span>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:mwanikimichel@gmail.com" class="footer-link">
+                        <span class="footer-icon">@</span>
+                        Email
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Michel Eliz Mwaniki. All Rights Reserved.</p>
+            <a href="index.html" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Poster View">
+    </div>
+
+    <div id="gallery-modal" class="gallery-modal" onclick="closeGallery()">
+        <span class="close-btn" onclick="closeGallery()">&times;</span>
+        <div class="gallery-modal-content" onclick="event.stopPropagation()">
+            <h2 id="gallery-title">Gallery</h2>
+            <div id="gallery-images" class="gallery-modal-images"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
