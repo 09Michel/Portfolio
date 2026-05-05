@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriFood Recipe App | Michel Eliz Mwaniki</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="scroll-progress"></div>
+
+    <nav class="editorial-nav">
+        <div class="nav-left">
+            <img src="images/logo1.12.png" alt="Logo" class="nav-logo">
+            <span class="nav-name">Michel Eliz</span>
+        </div>
+        <div class="nav-right">
+            <a href="index.html#about">About</a>
+            <a href="work.html">Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="work-hero betty-bg">
+        <div class="hero-text">
+            <span class="category-tag">CASE STUDY</span>
+            <h1>AfriFood <span>App</span></h1>
+            <p>A comprehensive web development project focused on delivering rich culinary experiences through responsive, user-centric design.</p>
+        </div>
+    </header>
+
+    <!-- PROJECT DETAILS -->
+    <section class="split-section about-white" style="padding-top: 80px; padding-bottom: 80px;">
+        <div class="section-content" style="max-width: 800px; margin: 0 auto; text-align: left;">
+            <span class="mini-title">ABOUT THE PROJECT</span>
+            <h2>Bridging Culture and <span>Technology</span></h2>
+            <div class="project-tags" style="margin: 20px 0;">
+                <span class="tag">Web Development</span>
+                <span class="tag">React</span>
+                <span class="tag">UI/UX Design</span>
+            </div>
+            
+            <a href="https://afrifood.vercel.app/" target="_blank" class="btn-primary" style="margin-bottom: 30px; font-size: 0.9rem; padding: 12px 25px;">Visit Live App ↗</a>
+
+            <p>
+                AfriFood is a high-performance web application built to bridge the gap between traditional culinary heritage and modern technology. Developed using React and Supabase, the platform offers a seamless, real-time experience for discovering and mastering authentic recipes from across the continent and beyond.
+            </p>
+            
+            <p style="margin-top: 20px;">
+                <strong>Role & Responsibilities</strong><br>
+                As the lead developer and designer, I was responsible for the full development lifecycle, from initial UI/UX wireframing in VS Code to deployment on Vercel.
+            </p>
+            <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8; color: var(--text-muted);">
+                <li><strong>Architecture:</strong> Designed a scalable database schema using Supabase to handle real-time recipe updates and user data.</li>
+                <li><strong>Frontend:</strong> Built a responsive, mobile-first interface using React to ensure accessibility for users in the kitchen or on the go.</li>
+            </ul>
+
+            <p style="margin-top: 20px;">
+                <strong>Core Innovations</strong>
+            </p>
+            <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8; color: var(--text-muted);">
+                <li><strong>AI Culinary Assistant:</strong> I integrated an intelligent AI companion that provides real-time guidance, suggests ingredient substitutions, and helps users scale recipes based on serving sizes.</li>
+                <li><strong>Location-Based Sourcing (Maps API):</strong> To ensure users can find authentic ingredients, I incorporated a Geolocation feature. The app identifies the user's location to highlight the nearest specialty spice stores and markets, turning a digital recipe into a tangible cooking experience.</li>
+            </ul>
+
+            <p style="margin-top: 20px;">
+                <strong>Technical Challenges & Solutions</strong>
+            </p>
+            <ul style="margin-top: 10px; margin-left: 20px; line-height: 1.8; color: var(--text-muted);">
+                <li><strong>Real-Time Data & Performance:</strong> Managing a growing library of recipes and location data while maintaining fast load times.<br>
+                <em>Solution:</em> Optimized data fetching through Supabase and implemented a clean, grid-based UI that ensures the discovery process remains fast and intuitive.</li>
+                <li style="margin-top: 10px;"><strong>Bridging Digital & Physical:</strong> Creating a workflow that helps users find ingredients.<br>
+                <em>Solution:</em> Integrated a Maps interface that filters for local vendors based on the specific recipe the user is currently viewing.</li>
+            </ul>
+
+            <p style="margin-top: 20px;">
+                <strong>Impact</strong><br>
+                <span style="color: var(--text-muted);">AfriFood is more than a recipe book; it is a specialized tool that empowers users to explore diverse flavors with the help of AI and local sourcing, making authentic cooking more accessible than ever.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- SNAPSHOTS GALLERY -->
+    <section class="full-section" style="background-color: var(--bg-dark); padding-top: 80px;">
+        <div class="container">
+            <div class="section-intro" style="text-align: center; margin: 0 auto 60px;">
+                <span class="mini-title" style="color: var(--text-light); border-left: none;">Visual Walkthrough</span>
+                <h2>App Snapshots</h2>
+                <p class="section-description" style="color: rgba(255,255,255,0.8);">A closer look at the user interface and key features of the AfriFood application.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('images/Screenshot 2026-05-05 093645.png')">
+                    <div class="gallery-img-box" style="height: 250px; background: var(--bg-cream);">
+                        <img loading="lazy" src="images/Screenshot 2026-05-05 093645.png" alt="AfriFood Snapshot 1" style="object-fit: contain; padding: 20px;">
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/Screenshot 2026-05-05 093704.png')">
+                    <div class="gallery-img-box" style="height: 250px; background: var(--bg-cream);">
+                        <img loading="lazy" src="images/Screenshot 2026-05-05 093704.png" alt="AfriFood Snapshot 2" style="object-fit: contain; padding: 20px;">
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/Screenshot 2026-05-05 093734.png')">
+                    <div class="gallery-img-box" style="height: 250px; background: var(--bg-cream);">
+                        <img loading="lazy" src="images/Screenshot 2026-05-05 093734.png" alt="AfriFood Snapshot 3" style="object-fit: contain; padding: 20px;">
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/Screenshot 2026-05-05 093827.png')">
+                    <div class="gallery-img-box" style="height: 250px; background: var(--bg-cream);">
+                        <img loading="lazy" src="images/Screenshot 2026-05-05 093827.png" alt="AfriFood Snapshot 4" style="object-fit: contain; padding: 20px;">
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/Screenshot 2026-05-05 093903.png')">
+                    <div class="gallery-img-box" style="height: 250px; background: var(--bg-cream);">
+                        <img loading="lazy" src="images/Screenshot 2026-05-05 093903.png" alt="AfriFood Snapshot 5" style="object-fit: contain; padding: 20px;">
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/Screenshot 2026-05-05 093934.png')">
+                    <div class="gallery-img-box" style="height: 250px; background: var(--bg-cream);">
+                        <img loading="lazy" src="images/Screenshot 2026-05-05 093934.png" alt="AfriFood Snapshot 6" style="object-fit: contain; padding: 20px;">
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/Screenshot 2026-05-05 093952.png')">
+                    <div class="gallery-img-box" style="height: 250px; background: var(--bg-cream);">
+                        <img loading="lazy" src="images/Screenshot 2026-05-05 093952.png" alt="AfriFood Snapshot 7" style="object-fit: contain; padding: 20px;">
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('images/Screenshot 2026-05-05 094010.png')">
+                    <div class="gallery-img-box" style="height: 250px; background: var(--bg-cream);">
+                        <img loading="lazy" src="images/Screenshot 2026-05-05 094010.png" alt="AfriFood Snapshot 8" style="object-fit: contain; padding: 20px;">
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="work.html" class="view-btn" style="text-decoration: none;">← Back to All Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="editorial-footer">
+        <div class="footer-main">
+            <!-- Logo/Name -->
+            <div class="footer-brand">
+                <h2 class="nav-name">Michel Eliz</h2>
+            </div>
+
+            <!-- Big Editorial Statement -->
+            <div class="footer-statement">
+                <p>Architecting ethical tech solutions <br>& creative strategies.</p>
+            </div>
+
+            <!-- Professional Links -->
+            <nav class="footer-nav">
+                <div class="footer-link-group">
+                    <span class="footer-label">Connect</span>
+                    <a href="https://linkedin.com/in/michel-mwaniki-352342351" target="_blank" class="footer-link">
+                        <span class="footer-icon">L</span>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:mwanikimichel@gmail.com" class="footer-link">
+                        <span class="footer-icon">@</span>
+                        Email
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Michel Eliz Mwaniki. All Rights Reserved.</p>
+            <a href="#" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="View">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
