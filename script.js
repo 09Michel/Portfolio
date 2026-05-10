@@ -82,9 +82,9 @@ function openGallery(projectName) {
 
     // Sample gallery images - you can customize these per project
     const galleries = {
-        'TrueGreen Nurseries': ['images/truegreen1.png', 'images/truegreen2.png', 'images/truegreen3.png', 'images/truegreen4.png', 'images/truegreen5.png', 'images/truegreen6.png'],
-        'Junior League of Nairobi': ['images/jln1.png', 'images/jln2.png', 'images/jln3.png', 'images/jln4.png', 'images/jln5.png', 'images/jln6.png'],
-        'Institute of Design and Innovation': ['images/idi1.png', 'images/idi2.png', 'images/idi3.png']
+        'TrueGreen Nurseries': ['images/truegreen1.webp', 'images/truegreen2.webp', 'images/truegreen3.webp', 'images/truegreen4.webp', 'images/truegreen5.webp', 'images/truegreen6.webp'],
+        'Junior League of Nairobi': ['images/jln1.webp', 'images/jln2.webp', 'images/jln3.webp', 'images/jln4.webp', 'images/jln5.webp', 'images/jln6.webp'],
+        'Institute of Design and Innovation': ['images/idi1.webp', 'images/idi2.webp', 'images/idi3.webp']
     };
 
     const images = galleries[projectName] || [];

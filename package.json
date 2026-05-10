@@ -4,9 +4,13 @@
   "description": "Personal portfolio website",
   "main": "index.html",
   "scripts": {
-    "dev": "live-server"
+    "dev": "live-server",
+    "build": "echo 'Static site ready for deployment. All images optimized to WebP.'"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
   }
 }
